@@ -1,0 +1,21 @@
+### - Enviando parametros por la cabecera y el GET lo mostrara - Tambien no podemos enviar un parametro y darle por defecto un valor
+GET http://localhost:8081/api/usuarios?&userKey=221851&limit=10
+
+### - Aca enviamos el body 
+POST  http://localhost:8081/api/usuarios
+Content-Type: application/json
+
+{
+    "name" : "Fernando Valencia",
+    "edad" : 29,
+    "apellidos" : "bENITES",
+    "carrera" : "Sistemas"
+}
+
+
+
+###
+PUT  http://localhost:8081/api/usuarios/10
+
+###
+DELETE http://localhost:8081/api/usuarios
